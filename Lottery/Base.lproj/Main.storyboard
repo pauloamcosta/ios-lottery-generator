@@ -52,7 +52,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="generateGamd" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSe-5j-8PH"/>
                                     <action selector="generateGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Gy-Ix-0pN"/>
                                 </connections>
                             </button>
@@ -138,7 +137,6 @@
                     <connections>
                         <outlet property="lbGameType" destination="cWr-3I-OBq" id="gZS-Ka-7ZS"/>
                         <outlet property="scGameType" destination="EJM-O6-e8X" id="eIi-Zg-Lzk"/>
-                        <outletCollection property="balls" destination="MzW-7a-X76" collectionClass="NSMutableArray" id="6Px-v2-CKN"/>
                         <outletCollection property="ball" destination="MzW-7a-X76" collectionClass="NSMutableArray" id="L32-5o-3MU"/>
                         <outletCollection property="ball" destination="MzW-7a-X76" collectionClass="NSMutableArray" id="cLK-NM-scf"/>
                         <outletCollection property="ball" destination="LPH-Pd-2QU" collectionClass="NSMutableArray" id="WAk-IQ-vMb"/>
