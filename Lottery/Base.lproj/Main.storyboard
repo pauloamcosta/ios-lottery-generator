@@ -51,15 +51,68 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateGamd" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSe-5j-8PH"/>
+                                    <action selector="generateGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Gy-Ix-0pN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzW-7a-X76">
-                                <rect key="frame" x="89" y="391" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
-                                <state key="normal" title="60">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zT8-XT-Vrb">
+                                <rect key="frame" x="40.666666666666657" y="308" width="294" height="196"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fyU-3Z-9vq">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzW-7a-X76">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                <state key="normal" title="60" backgroundImage="ball">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPH-Pd-2QU">
+                                                <rect key="frame" x="102" y="0.0" width="90" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                <state key="normal" title="60" backgroundImage="ball">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC6-BS-hOt">
+                                                <rect key="frame" x="204" y="0.0" width="90" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                <state key="normal" title="60" backgroundImage="ball">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-PT-ZpW">
+                                        <rect key="frame" x="0.0" y="106" width="294" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lup-Dg-Dy1">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                <state key="normal" title="60" backgroundImage="ball">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Z1-eH-Gxr">
+                                                <rect key="frame" x="102" y="0.0" width="90" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                <state key="normal" title="60" backgroundImage="ball">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ti6-Us-iza">
+                                                <rect key="frame" x="204" y="0.0" width="90" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                                <state key="normal" title="60" backgroundImage="ball">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -75,11 +128,25 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJM-O6-e8X" secondAttribute="trailing" constant="16" id="dvy-YA-qmP"/>
                             <constraint firstItem="cWr-3I-OBq" firstAttribute="centerY" secondItem="pyZ-8b-sAJ" secondAttribute="centerY" id="e8h-iv-U8I"/>
                             <constraint firstAttribute="bottom" secondItem="ayp-mt-7MU" secondAttribute="bottom" constant="35" id="hGM-KY-12W"/>
+                            <constraint firstItem="zT8-XT-Vrb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jiY-sm-F0O"/>
                             <constraint firstItem="cWr-3I-OBq" firstAttribute="centerY" secondItem="pyZ-8b-sAJ" secondAttribute="centerY" id="q0J-GL-KOL"/>
+                            <constraint firstItem="zT8-XT-Vrb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ucY-e6-CZD"/>
                             <constraint firstItem="pyZ-8b-sAJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w6R-JC-nNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lbGameType" destination="cWr-3I-OBq" id="gZS-Ka-7ZS"/>
+                        <outlet property="scGameType" destination="EJM-O6-e8X" id="eIi-Zg-Lzk"/>
+                        <outletCollection property="balls" destination="MzW-7a-X76" collectionClass="NSMutableArray" id="6Px-v2-CKN"/>
+                        <outletCollection property="ball" destination="MzW-7a-X76" collectionClass="NSMutableArray" id="L32-5o-3MU"/>
+                        <outletCollection property="ball" destination="MzW-7a-X76" collectionClass="NSMutableArray" id="cLK-NM-scf"/>
+                        <outletCollection property="ball" destination="LPH-Pd-2QU" collectionClass="NSMutableArray" id="WAk-IQ-vMb"/>
+                        <outletCollection property="ball" destination="LC6-BS-hOt" collectionClass="NSMutableArray" id="ip4-DS-nai"/>
+                        <outletCollection property="ball" destination="lup-Dg-Dy1" collectionClass="NSMutableArray" id="wBa-pt-hEz"/>
+                        <outletCollection property="ball" destination="3Z1-eH-Gxr" collectionClass="NSMutableArray" id="hEv-7f-LCY"/>
+                        <outletCollection property="ball" destination="ti6-Us-iza" collectionClass="NSMutableArray" id="hlq-Tk-k8b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,6 +154,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ball" width="90" height="90"/>
         <image name="top" width="750" height="295"/>
     </resources>
 </document>
